@@ -8,7 +8,7 @@ pipeline {
     }
     stage('oof') {
       steps {
-        s3Upload(bucket: 'poopy-crap', text: 'why', verbose: true)
+        s3Upload(bucket: 'poopy-crap', text: 'why', verbose: true, path: 'poopy-crap/')
       }
     }
   }
