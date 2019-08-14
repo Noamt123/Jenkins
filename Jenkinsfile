@@ -6,5 +6,10 @@ pipeline {
         echo 'hi'
       }
     }
+    stage('oof') {
+      steps {
+        s3Upload(bucket: 'poopy-crap', text: 'why', verbose: true)
+      }
+    }
   }
 }
